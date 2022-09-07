@@ -377,7 +377,7 @@ const mainSerivce = async () => {
   });
 
   const job1 = new CronJob(
-    " 0 59 12 * * *",
+    " 0 0 1 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await aatalklinik(cluster, page, positions, levels);
@@ -417,7 +417,7 @@ const mainSerivce = async () => {
   job1.start();
 
   const job2 = new CronJob(
-    " 0 5 7,12,15 * * *",
+    " 0 20 1 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await wessel(cluster, page, positions, levels);
@@ -462,7 +462,7 @@ const mainSerivce = async () => {
   job2.start();
 
   const job3 = new CronJob(
-    " 0 10 7,12,15 * * *",
+    " 0 40 1 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await stellengob(cluster, page, positions, levels);
@@ -508,7 +508,7 @@ const mainSerivce = async () => {
   job3.start();
 
   const job4 = new CronJob(
-    " 0 15 7,12,15 * * *",
+    " 0 0 2 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await salzkotten(cluster, page, positions, levels);
@@ -562,7 +562,7 @@ const mainSerivce = async () => {
   job4.start();
 
   const job5 = new CronJob(
-    " 0 20 7,12,15 * * *",
+    " 0 20 2 * * *",
     () => {
       cluster
         .queue(async ({ page }) => {
@@ -626,7 +626,7 @@ const mainSerivce = async () => {
   job5.start();
 
   const job6 = new CronJob(
-    " 0 25 7,12,15 * * *",
+    " 0 40 2 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await nordkirchen(cluster, page, positions, levels);
@@ -672,7 +672,7 @@ const mainSerivce = async () => {
   job6.start();
 
   const job7 = new CronJob(
-    " 0 30 7,12,15 * * *",
+    " 0 0 3 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await medicalPark(cluster, page, positions, levels);
@@ -710,7 +710,7 @@ const mainSerivce = async () => {
   job7.start();
 
   const job8 = new CronJob(
-    " 0 35 7,12,15 * * *",
+    " 0 20 3 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await mariaJosef(cluster, page, positions, levels);
@@ -756,7 +756,7 @@ const mainSerivce = async () => {
   job8.start();
 
   const job9 = new CronJob(
-    " 0 40 7,12,15 * * *",
+    " 0 40 3 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await luisen(cluster, page, positions, levels);
@@ -802,7 +802,7 @@ const mainSerivce = async () => {
   job9.start();
 
   const job10 = new CronJob(
-    " 0 45 7,12,15 * * *",
+    " 0 0 4 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await krefeld(cluster, page, positions, levels);
@@ -852,7 +852,7 @@ const mainSerivce = async () => {
   job10.start();
 
   const job11 = new CronJob(
-    " 0 50 7,12,15 * * *",
+    " 0 20 4 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await krankenhausBethanien(cluster, page, positions, levels);
@@ -894,7 +894,7 @@ const mainSerivce = async () => {
   job11.start();
 
   const job12 = new CronJob(
-    " 0 55 7,12,15 * * *",
+    " 0 40 4 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await klinikumLeverKusen(cluster, page, positions, levels);
@@ -944,7 +944,7 @@ const mainSerivce = async () => {
   job12.start();
 
   const job13 = new CronJob(
-    " 0 0 8,13,16 * * *",
+    " 0 0 5 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await klinikakorso(cluster, page, positions, levels);
@@ -982,7 +982,7 @@ const mainSerivce = async () => {
   job13.start();
 
   const job14 = new CronJob(
-    " 0 5 8,13,16 * * *",
+    " 0 20 5 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await karrierWittenShord(cluster, page, positions, levels);
@@ -1027,7 +1027,7 @@ const mainSerivce = async () => {
 
   job14.start();
   const job15 = new CronJob(
-    " 0 10 8,13,16 * * *",
+    " 0 40 5 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await jungBurnerKlinik(cluster, page, positions, levels);
@@ -1089,7 +1089,7 @@ const mainSerivce = async () => {
   job15.start();
 
   const job16 = new CronJob(
-    " 0 15 8,13,16 * * *",
+    " 0 0 6 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await hamm1(cluster, page, positions, levels);
@@ -1119,7 +1119,7 @@ const mainSerivce = async () => {
   job16.start();
 
   const job17 = new CronJob(
-    " 0 20 8,13,16 * * *",
+    " 0 20 6 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await gronau(cluster, page, positions, levels);
@@ -1172,7 +1172,7 @@ const mainSerivce = async () => {
 
   job17.start();
   const job18 = new CronJob(
-    " 0 25 8,13,16 * * *",
+    " 0 40 6 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await evkwesel(cluster, page, positions, levels);
@@ -1214,7 +1214,7 @@ const mainSerivce = async () => {
   job18.start();
 
   const job19 = new CronJob(
-    " 0 30 8,13,16 * * *",
+    " 0 0 7 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await elisabeth(cluster, page, positions, levels);
@@ -1268,7 +1268,7 @@ const mainSerivce = async () => {
   job19.start();
 
   const job20 = new CronJob(
-    " 0 35 8,13,16 * * *",
+    " 0 20 7 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await driefFaltigeHospital(cluster, page, positions, levels);
@@ -1321,7 +1321,7 @@ const mainSerivce = async () => {
   job20.start();
 
   const job21 = new CronJob(
-    " 0 40 8,13,16 * * *",
+    " 0 40 7 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await ddzNew(cluster, page, positions, levels);
@@ -1367,7 +1367,7 @@ const mainSerivce = async () => {
   job21.start();
 
   const job22 = new CronJob(
-    " 0 45 8,13,16 * * *",
+    " 0 0 8 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await bochum(cluster, page, positions, levels);
@@ -1417,7 +1417,7 @@ const mainSerivce = async () => {
   job22.start();
 
   const job23 = new CronJob(
-    " 0 50 8,13,16 * * *",
+    " 0 20 8 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await besthedaWuppertal(cluster, page, positions, levels);
@@ -1471,7 +1471,7 @@ const mainSerivce = async () => {
   job23.start();
 
   const job24 = new CronJob(
-    " 0 55 8,13,16 * * *",
+    " 0 40 8 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await atosKarrier(cluster, page, positions, levels);
@@ -1521,7 +1521,7 @@ const mainSerivce = async () => {
   job24.start();
 
   const job25 = new CronJob(
-    " 0 0 9,14,17 * * *",
+    " 0 0 9 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await wesphelia(cluster, page, positions, levels);
@@ -1567,7 +1567,7 @@ const mainSerivce = async () => {
   job25.start();
 
   const job26 = new CronJob(
-    " 0 5 9,14,17 * * *",
+    " 0 20 9 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await sigburg(cluster, page, positions, levels);
@@ -1617,7 +1617,7 @@ const mainSerivce = async () => {
   job26.start();
 
   const job27 = new CronJob(
-    " 0 10 9,14,17 * * *",
+    " 0 40 9 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await petershagen(cluster, page, positions, levels);
@@ -1659,7 +1659,7 @@ const mainSerivce = async () => {
   job27.start();
 
   const job28 = new CronJob(
-    " 0 15 9,14,17 * * *",
+    " 0 0 10 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await monchengladbachOne(cluster, page, positions, levels);
@@ -1725,7 +1725,7 @@ const mainSerivce = async () => {
   job28.start();
 
   const job29 = new CronJob(
-    " 0 20 9,14,17 * * *",
+    " 0 20 10 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await lippee(cluster, page, positions, levels);
@@ -1775,7 +1775,7 @@ const mainSerivce = async () => {
   job29.start();
 
   const job30 = new CronJob(
-    " 0 25 9,14,17 * * *",
+    " 0 40 10 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await kmt(cluster, page, positions, levels);
@@ -1833,7 +1833,7 @@ const mainSerivce = async () => {
   job30.start();
 
   const job31 = new CronJob(
-    " 0 25 9,14,17 * * *",
+    " 0 0 11 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await kaiser(cluster, page, positions, levels);
@@ -1886,7 +1886,7 @@ const mainSerivce = async () => {
   job31.start();
 
   const job32 = new CronJob(
-    " 0 25 9,14,17 * * *",
+    " 0 20 11 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await hochsauerland(cluster, page, positions, levels);
@@ -1940,7 +1940,7 @@ const mainSerivce = async () => {
   job32.start();
 
   const job33 = new CronJob(
-    " 0 30 9,14,17 * * *",
+    " 0 40 11 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await hagenn(cluster, page, positions, levels);
@@ -1994,7 +1994,7 @@ const mainSerivce = async () => {
   job33.start();
 
   const job34 = new CronJob(
-    " 0 35 9,14,17 * * *",
+    " 0 0 12 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await euskirchen(cluster, page, positions, levels);
@@ -2044,7 +2044,7 @@ const mainSerivce = async () => {
   job34.start();
 
   const job35 = new CronJob(
-    " 0 40 9,14,17 * * *",
+    " 0 20 12 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await guisburg(cluster, page, positions, levels);
@@ -2086,7 +2086,7 @@ const mainSerivce = async () => {
   job35.start();
 
   const job36 = new CronJob(
-    " 0 45 9,14,17 * * *",
+    " 0 40 12 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await bethal(cluster, page, positions, levels);
@@ -2140,7 +2140,7 @@ const mainSerivce = async () => {
   job36.start();
 
   const job37 = new CronJob(
-    " 0 50 9,14,17 * * *",
+    " 0 0 13 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await attendorn(cluster, page, positions, levels);
@@ -2182,7 +2182,7 @@ const mainSerivce = async () => {
   job37.start();
 
   let job38 = new CronJob(
-    "0 0 10,15,18 * * *",
+    "0 20 13 * * *",
     () => {
       cluster.queue(async ({ page }) => {
         await marienHospitalWattenscheid(cluster, page, positions, levels);
