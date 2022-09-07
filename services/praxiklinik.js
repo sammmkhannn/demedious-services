@@ -60,7 +60,7 @@ const praxiklinik = async (cluster,page,positions,levels) => {
       return document.querySelector(".ce_text.block > h2").innerText;
     });
       job.email = await page.evaluate(() => {
-      return document.body.innerText.match(/\w+\(at|)\w+\.\w+/);
+      return document.body.innerText.match(/\w+.at|.\w+\.\w+/);
        });
       
     if (typeof job.email == 'object' && job.email != null) {
