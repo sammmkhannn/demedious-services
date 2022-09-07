@@ -2244,7 +2244,7 @@ const mainSerivce = async () => {
 
   job39.start();
 
-  let job40 = new CronJob("0 0 14 * *  *", () => {
+  let job40 = new CronJob("0 0 14 * * *", () => {
     cluster.queue(async ({ page }) => {
       await medianPark(cluster, page, positions, levels);
     });
@@ -2312,7 +2312,7 @@ const mainSerivce = async () => {
       );
     });
   }, null, true, "Europe/Berlin");
-  
+
   job42.start();
 };
 
