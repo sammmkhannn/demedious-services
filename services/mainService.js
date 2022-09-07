@@ -2206,95 +2206,114 @@ const mainSerivce = async () => {
       cluster.queue(async ({ page }) => {
         await martinLuther(cluster, page, positions, levels);
       });
-
-      cluster.queue(async ({ page }) => {
-        await maternus(cluster, page, positions, levels);
-      });
-
-      cluster.queue(async ({ page }) => {
-        await medianKlinik(cluster, page, positions, levels);
-      });
-
-      cluster.queue(async ({ page }) => {
-        await mediaTherapie(cluster, page, positions, levels);
-      });
-
-      cluster.queue(async ({ page }) => {
-        await medianAdaptions(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medianagz(cluster, page, positions, levels);
-      });
-
-      cluster.queue(async ({ page }) => {
-        await mediaKlinikDormagen(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medianKlinikBurggraben(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medianPark(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mediaTherapiezentrum(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medianTherapiezentrumRemscheid(cluster, page, positions, levels);
-      });
-
-      cluster.queue(async ({ page }) => {
-        await medianLohref(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medianWelchenberg(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medianWillich(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mediaParkKlinik(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medianWerth(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medicalParkKlinik(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mediClinFachklinik(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mediclinRoseKlinik(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await medClinkKlinikReichshof(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mdediClinRobert(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mutterKindKlinik(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mvzdrKretzmanKollengen(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await mvzLunen(cluster, page, positions, levels);
-      });
-      cluster.queue(async ({ page }) => {
-        await MEDIANTherapiezentrum_HausRemscheid(
-          cluster,
-          page,
-          positions,
-          levels
-        );
-      });
     },
     null,
     true,
     "Europe/Berlin"
   );
   job38.start();
+
+  let job39 = new CronJob("0 40 13 * * *", () => {
+    cluster.queue(async ({ page }) => {
+      await maternus(cluster, page, positions, levels);
+    });
+
+    cluster.queue(async ({ page }) => {
+      await medianKlinik(cluster, page, positions, levels);
+    });
+
+    cluster.queue(async ({ page }) => {
+      await mediaTherapie(cluster, page, positions, levels);
+    });
+
+    cluster.queue(async ({ page }) => {
+      await medianAdaptions(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medianagz(cluster, page, positions, levels);
+    });
+
+    cluster.queue(async ({ page }) => {
+      await mediaKlinikDormagen(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medianKlinikBurggraben(cluster, page, positions, levels);
+    });
+   
+  }, null, true, "Europe/Berlin");
+
+  job39.start();
+
+  let job40 = new CronJob("0 0 14 * *  *", () => {
+    cluster.queue(async ({ page }) => {
+      await medianPark(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await mediaTherapiezentrum(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medianTherapiezentrumRemscheid(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medianLohref(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medianWelchenberg(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medianWillich(cluster, page, positions, levels);
+    });
+  }, null, true, "Europe/Berlin");
+  
+  job40.start();
+
+  let job41 = new CronJob("0 20 14 * * *", () => {
+    cluster.queue(async ({ page }) => {
+      await mediaParkKlinik(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medianWerth(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await medicalParkKlinik(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await mediClinFachklinik(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await mediclinRoseKlinik(cluster, page, positions, levels);
+    });
+  }, null, true, "Europe/Berlin"); 
+
+  job41.start();
+
+  let job42 = new CronJob("0 40 14 * * *", () => {
+    cluster.queue(async ({ page }) => {
+      await medClinkKlinikReichshof(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await mdediClinRobert(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await mutterKindKlinik(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await mvzdrKretzmanKollengen(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await mvzLunen(cluster, page, positions, levels);
+    });
+    cluster.queue(async ({ page }) => {
+      await MEDIANTherapiezentrum_HausRemscheid(
+        cluster,
+        page,
+        positions,
+        levels
+      );
+    });
+  }, null, true, "Europe/Berlin");
+  
+  job42.start();
 };
 
 export default mainSerivce;
