@@ -7,6 +7,7 @@
   "dependencies": {
     "cron": "^2.1.0",
     "mongoose": "^6.5.4",
+    "node-apidoc": "^0.1.0",
     "puppeteer": "^17.1.1",
     "puppeteer-cluster": "^0.23.0"
   }
