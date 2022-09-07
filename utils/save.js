@@ -1,4 +1,4 @@
-import Job from "../api/models/Job.model.js";
+import Job from "../models/Job.model.js";
 import print from "../utils/print.js";
 
 
